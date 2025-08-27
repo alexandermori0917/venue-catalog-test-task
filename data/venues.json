@@ -114,7 +114,7 @@
     "country": "Canada",
     "city": "Vancouver",
     "address": "789 Lakefront Drive",
-    "latitude": 49.282730,
+    "latitude": 49.28273,
     "longitude": -123.120735,
     "capacity_min": 5,
     "capacity_max": 15,
@@ -159,4 +159,3 @@
     ]
   }
 ]
-

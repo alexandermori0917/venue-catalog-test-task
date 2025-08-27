@@ -5,11 +5,11 @@ A Next.js application for browsing and filtering venues (hotels, villas, event s
 ## Features
 
 - **Search**: Search venues by name or city
-- **Filters**: 
+- **Filters**:
   - Guest capacity range (min/max)
   - Price range (min/max)
   - Amenities (Wi-Fi, Yoga Hall, Gym, Private Pool)
-- **Sorting**: 
+- **Sorting**:
   - Relevance (default)
   - Price: Low to High
   - Price: High to Low
@@ -27,18 +27,20 @@ A Next.js application for browsing and filtering venues (hotels, villas, event s
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - pnpm (recommended) or npm
 
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/alexandermori0917/venue-catalog-test-task.git
 cd venue-catalog-test-task
 ```
 
 2. Install dependencies:
+
 ```bash
 pnpm install
 # or
@@ -46,6 +48,7 @@ npm install
 ```
 
 3. Run the development server:
+
 ```bash
 pnpm dev
 # or
@@ -78,13 +81,14 @@ Fetches venues with optional query parameters:
 
 - `search` - Search by venue name or city
 - `minGuests` - Minimum guest capacity
-- `maxGuests` - Maximum guest capacity  
+- `maxGuests` - Maximum guest capacity
 - `minPrice` - Minimum price per night
 - `maxPrice` - Maximum price per night
 - `amenities` - Comma-separated list of amenities to filter by
 - `sortBy` - Sort order: `relevance`, `price_low`, `price_high`, `capacity`
 
 Example:
+
 ```
 GET /api/venues?search=Boulder&minGuests=10&maxGuests=50&amenities=Wi-Fi,Yoga Hall&sortBy=price_low
 ```
@@ -125,7 +129,7 @@ The application has been manually tested for:
 
 - ✅ Search functionality (by name and city)
 - ✅ Guest capacity filtering
-- ✅ Price range filtering  
+- ✅ Price range filtering
 - ✅ Amenity filtering (multiple selection)
 - ✅ Sorting by price and capacity
 - ✅ Empty state when no results found
@@ -152,6 +156,7 @@ The application is ready for deployment on Vercel:
 ## Time Spent
 
 Approximately 5 hours total:
+
 - 1 hour: Project setup and understanding requirements
 - 2 hours: API implementation and mock data creation
 - 1.5 hours: Frontend component development
@@ -160,6 +165,7 @@ Approximately 5 hours total:
 ## Future Enhancements
 
 For a production version, consider:
+
 - Database integration (Supabase as specified in main project)
 - User authentication and favorites
 - Image uploads and storage

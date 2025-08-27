@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import Image from 'next/image';
+import { useState, useEffect } from "react";
+import Image from "next/image";
 
 interface Venue {
   id: string;
@@ -35,33 +35,34 @@ interface VenuesResponse {
 export default function CatalogPage() {
   const [venues, setVenues] = useState<Venue[]>([]);
   const [loading, setLoading] = useState(true);
-  const [search, setSearch] = useState('');
-  const [minGuests, setMinGuests] = useState('');
-  const [maxGuests, setMaxGuests] = useState('');
-  const [minPrice, setMinPrice] = useState('');
-  const [maxPrice, setMaxPrice] = useState('');
+  const [search, setSearch] = useState("");
+  const [minGuests, setMinGuests] = useState("");
+  const [maxGuests, setMaxGuests] = useState("");
+  const [minPrice, setMinPrice] = useState("");
+  const [maxPrice, setMaxPrice] = useState("");
   const [selectedAmenities, setSelectedAmenities] = useState<string[]>([]);
-  const [sortBy, setSortBy] = useState('relevance');
+  const [sortBy, setSortBy] = useState("relevance");
 
-  const amenityOptions = ['Wi-Fi', 'Yoga Hall', 'Gym', 'Private Pool'];
+  const amenityOptions = ["Wi-Fi", "Yoga Hall", "Gym", "Private Pool"];
 
   const fetchVenues = async () => {
     setLoading(true);
     try {
       const params = new URLSearchParams();
-      if (search) params.append('search', search);
-      if (minGuests) params.append('minGuests', minGuests);
-      if (maxGuests) params.append('maxGuests', maxGuests);
-      if (minPrice) params.append('minPrice', minPrice);
-      if (maxPrice) params.append('maxPrice', maxPrice);
-      if (selectedAmenities.length > 0) params.append('amenities', selectedAmenities.join(','));
-      if (sortBy) params.append('sortBy', sortBy);
+      if (search) params.append("search", search);
+      if (minGuests) params.append("minGuests", minGuests);
+      if (maxGuests) params.append("maxGuests", maxGuests);
+      if (minPrice) params.append("minPrice", minPrice);
+      if (maxPrice) params.append("maxPrice", maxPrice);
+      if (selectedAmenities.length > 0)
+        params.append("amenities", selectedAmenities.join(","));
+      if (sortBy) params.append("sortBy", sortBy);
 
       const response = await fetch(`/api/venues?${params.toString()}`);
       const data: VenuesResponse = await response.json();
       setVenues(data.venues);
     } catch (error) {
-      console.error('Error fetching venues:', error);
+      console.error("Error fetching venues:", error);
     } finally {
       setLoading(false);
     }
@@ -69,12 +70,20 @@ export default function CatalogPage() {
 
   useEffect(() => {
     fetchVenues();
-  }, [search, minGuests, maxGuests, minPrice, maxPrice, selectedAmenities, sortBy]);
+  }, [
+    search,
+    minGuests,
+    maxGuests,
+    minPrice,
+    maxPrice,
+    selectedAmenities,
+    sortBy,
+  ]);
 
   const handleAmenityChange = (amenity: string) => {
-    setSelectedAmenities(prev => 
-      prev.includes(amenity) 
-        ? prev.filter(a => a !== amenity)
+    setSelectedAmenities((prev) =>
+      prev.includes(amenity)
+        ? prev.filter((a) => a !== amenity)
         : [...prev, amenity]
     );
   };
@@ -83,12 +92,15 @@ export default function CatalogPage() {
     <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-3xl font-bold text-gray-900 mb-8">Venue Catalog</h1>
-        
+
         {/* Search and Filters */}
         <div className="bg-white rounded-lg shadow-md p-6 mb-8">
           {/* Search */}
           <div className="mb-6">
-            <label htmlFor="search" className="block text-sm font-medium text-gray-700 mb-2">
+            <label
+              htmlFor="search"
+              className="block text-sm font-medium text-gray-700 mb-2"
+            >
               Search by name or city
             </label>
             <input
@@ -105,7 +117,9 @@ export default function CatalogPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
             {/* Guest Range */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Guests</label>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Guests
+              </label>
               <div className="flex space-x-2">
                 <input
                   type="number"
@@ -126,7 +140,9 @@ export default function CatalogPage() {
 
             {/* Price Range */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Price Range</label>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Price Range
+              </label>
               <div className="flex space-x-2">
                 <input
                   type="number"
@@ -147,7 +163,9 @@ export default function CatalogPage() {
 
             {/* Amenities */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Amenities</label>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Amenities
+              </label>
               <div className="space-y-2">
                 {amenityOptions.map((amenity) => (
                   <label key={amenity} className="flex items-center">
@@ -165,7 +183,9 @@ export default function CatalogPage() {
 
             {/* Sort */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Sort by</label>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Sort by
+              </label>
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
@@ -188,34 +208,47 @@ export default function CatalogPage() {
         ) : venues.length === 0 ? (
           <div className="text-center py-12">
             <div className="text-xl text-gray-600 mb-4">No venues found</div>
-            <p className="text-gray-500">Try adjusting your search criteria or filters.</p>
+            <p className="text-gray-500">
+              Try adjusting your search criteria or filters.
+            </p>
           </div>
         ) : (
           <>
             <div className="mb-4">
-              <p className="text-gray-600">{venues.length} venue{venues.length !== 1 ? 's' : ''} found</p>
+              <p className="text-gray-600">
+                {venues.length} venue{venues.length !== 1 ? "s" : ""} found
+              </p>
             </div>
-            
+
             {/* Venue Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {venues.map((venue) => (
-                <div key={venue.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <div
+                  key={venue.id}
+                  className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+                >
                   {/* Venue Image */}
                   <div className="relative h-48">
                     <Image
-                      src={venue.photos[0]?.url || '/placeholder-venue.jpg'}
+                      src={venue.photos[0]?.url || "/placeholder-venue.jpg"}
                       alt={venue.photos[0]?.alt_text || venue.title}
                       fill
                       className="object-cover"
                     />
                   </div>
-                  
+
                   {/* Venue Info */}
                   <div className="p-4">
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{venue.title}</h3>
-                    <p className="text-sm text-gray-600 mb-2">{venue.city}, {venue.country}</p>
-                    <p className="text-sm text-gray-700 mb-3 line-clamp-2">{venue.description}</p>
-                    
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                      {venue.title}
+                    </h3>
+                    <p className="text-sm text-gray-600 mb-2">
+                      {venue.city}, {venue.country}
+                    </p>
+                    <p className="text-sm text-gray-700 mb-3 line-clamp-2">
+                      {venue.description}
+                    </p>
+
                     {/* Capacity and Price */}
                     <div className="flex justify-between items-center mb-3">
                       <span className="text-sm text-gray-600">
@@ -225,7 +258,7 @@ export default function CatalogPage() {
                         ${venue.price_min}-${venue.price_max}/night
                       </span>
                     </div>
-                    
+
                     {/* Amenities */}
                     <div className="flex flex-wrap gap-1">
                       {venue.amenities.slice(0, 3).map((amenity) => (
@@ -252,4 +285,3 @@ export default function CatalogPage() {
     </div>
   );
 }
-

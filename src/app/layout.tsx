@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Venue Catalog - Find Your Perfect Event Space",
-  description: "Discover amazing venues for your next retreat, event, or gathering. Search through our curated collection of hotels, villas, and event spaces.",
+  description:
+    "Discover amazing venues for your next retreat, event, or gathering. Search through our curated collection of hotels, villas, and event spaces.",
 };
 
 export default function RootLayout({
