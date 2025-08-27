@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-      <Container className="py-16">
+      <Container className="py-8 sm:py-12 md:py-16 lg:py-20">
         <Hero />
         <FeaturesSection />
       </Container>
