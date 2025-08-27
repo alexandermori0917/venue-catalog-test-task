@@ -1,0 +1,162 @@
+[
+  {
+    "id": "1a2b3c4d-5e6f-7890-1234-567890abcdef",
+    "owner_id": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+    "title": "Serenity Retreat Center",
+    "description": "A peaceful retreat center nestled in the mountains, perfect for yoga and meditation.",
+    "status": "published",
+    "country": "USA",
+    "city": "Boulder",
+    "address": "123 Mountain View Rd",
+    "latitude": 40.014984,
+    "longitude": -105.270546,
+    "capacity_min": 10,
+    "capacity_max": 30,
+    "price_min": 100,
+    "price_max": 250,
+    "price_unit": "per_night",
+    "bedrooms": 15,
+    "bathrooms": 10,
+    "website_url": "https://serenityretreat.com",
+    "instagram_url": "https://instagram.com/serenityretreat",
+    "created_at": "2024-01-01T10:00:00Z",
+    "updated_at": "2024-01-01T10:00:00Z",
+    "photos": [
+      {
+        "id": "photo1",
+        "url": "https://via.placeholder.com/400x300/FF5733/FFFFFF?text=Venue+1",
+        "alt_text": "Exterior view of Serenity Retreat Center",
+        "position": 0
+      },
+      {
+        "id": "photo2",
+        "url": "https://via.placeholder.com/400x300/33FF57/FFFFFF?text=Venue+1",
+        "alt_text": "Yoga hall",
+        "position": 1
+      }
+    ],
+    "amenities": [
+      {
+        "id": "amenity1",
+        "name": "Wi-Fi",
+        "group": "core",
+        "icon_url": "",
+        "description": "High-speed internet access"
+      },
+      {
+        "id": "amenity2",
+        "name": "Yoga Hall",
+        "group": "core",
+        "icon_url": "",
+        "description": "Spacious yoga hall with equipment"
+      }
+    ]
+  },
+  {
+    "id": "6e7f8a9b-0c1d-2e3f-4567-890abcdef123",
+    "owner_id": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+    "title": "Urban Oasis Hotel",
+    "description": "A modern hotel in the heart of the city, ideal for business and leisure.",
+    "status": "published",
+    "country": "USA",
+    "city": "Denver",
+    "address": "456 City Center Blvd",
+    "latitude": 39.739235,
+    "longitude": -104.990251,
+    "capacity_min": 50,
+    "capacity_max": 200,
+    "price_min": 150,
+    "price_max": 400,
+    "price_unit": "per_night",
+    "bedrooms": 100,
+    "bathrooms": 100,
+    "website_url": "https://urbanoasis.com",
+    "instagram_url": "https://instagram.com/urbanoasis",
+    "created_at": "2024-01-15T12:00:00Z",
+    "updated_at": "2024-01-15T12:00:00Z",
+    "photos": [
+      {
+        "id": "photo3",
+        "url": "https://via.placeholder.com/400x300/3357FF/FFFFFF?text=Venue+2",
+        "alt_text": "Facade of Urban Oasis Hotel",
+        "position": 0
+      },
+      {
+        "id": "photo4",
+        "url": "https://via.placeholder.com/400x300/FF3357/FFFFFF?text=Venue+2",
+        "alt_text": "Hotel lobby",
+        "position": 1
+      }
+    ],
+    "amenities": [
+      {
+        "id": "amenity1",
+        "name": "Wi-Fi",
+        "group": "core",
+        "icon_url": "",
+        "description": "High-speed internet access"
+      },
+      {
+        "id": "amenity3",
+        "name": "Gym",
+        "group": "wellness",
+        "icon_url": "",
+        "description": "Fully equipped fitness center"
+      }
+    ]
+  },
+  {
+    "id": "c1d2e3f4-5a6b-7c8d-9012-34567890abcd",
+    "owner_id": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+    "title": "Lakeside Villa",
+    "description": "A luxurious villa by the lake, perfect for family gatherings and events.",
+    "status": "published",
+    "country": "Canada",
+    "city": "Vancouver",
+    "address": "789 Lakefront Drive",
+    "latitude": 49.282730,
+    "longitude": -123.120735,
+    "capacity_min": 5,
+    "capacity_max": 15,
+    "price_min": 300,
+    "price_max": 800,
+    "price_unit": "per_night",
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "website_url": "https://lakesidevilla.com",
+    "instagram_url": "https://instagram.com/lakesidevilla",
+    "created_at": "2024-02-01T09:00:00Z",
+    "updated_at": "2024-02-01T09:00:00Z",
+    "photos": [
+      {
+        "id": "photo5",
+        "url": "https://via.placeholder.com/400x300/57FF33/FFFFFF?text=Venue+3",
+        "alt_text": "Lakeside view of the villa",
+        "position": 0
+      },
+      {
+        "id": "photo6",
+        "url": "https://via.placeholder.com/400x300/FF33FF/FFFFFF?text=Venue+3",
+        "alt_text": "Spacious living room",
+        "position": 1
+      }
+    ],
+    "amenities": [
+      {
+        "id": "amenity1",
+        "name": "Wi-Fi",
+        "group": "core",
+        "icon_url": "",
+        "description": "High-speed internet access"
+      },
+      {
+        "id": "amenity4",
+        "name": "Private Pool",
+        "group": "wellness",
+        "icon_url": "",
+        "description": "Private swimming pool"
+      }
+    ]
+  }
+]
+
