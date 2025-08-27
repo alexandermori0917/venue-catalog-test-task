@@ -34,7 +34,7 @@ A Next.js application for browsing and filtering venues (hotels, villas, event s
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/alexandermori0917/venue-catalog-test-task.git
 cd venue-catalog-test-task
 ```
 
