@@ -2,8 +2,8 @@
   {
     "id": "1a2b3c4d-5e6f-7890-1234-567890abcdef",
     "owner_id": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
-    "title": "Serenity Retreat Center",
-    "description": "A peaceful retreat center nestled in the mountains, perfect for yoga and meditation.",
+    "title": "Serenity Mountain Retreat",
+    "description": "A peaceful mountain retreat center perfect for yoga, meditation, and wellness workshops. Surrounded by pristine nature with stunning mountain views.",
     "status": "published",
     "country": "USA",
     "city": "Boulder",
@@ -12,8 +12,8 @@
     "longitude": -105.270546,
     "capacity_min": 10,
     "capacity_max": 30,
-    "price_min": 100,
-    "price_max": 250,
+    "price_min": 120,
+    "price_max": 280,
     "price_unit": "per_night",
     "bedrooms": 15,
     "bathrooms": 10,
@@ -24,14 +24,14 @@
     "photos": [
       {
         "id": "photo1",
-        "url": "https://via.placeholder.com/400x300/FF5733/FFFFFF?text=Venue+1",
-        "alt_text": "Exterior view of Serenity Retreat Center",
+        "url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
+        "alt_text": "Mountain retreat exterior",
         "position": 0
       },
       {
         "id": "photo2",
-        "url": "https://via.placeholder.com/400x300/33FF57/FFFFFF?text=Venue+1",
-        "alt_text": "Yoga hall",
+        "url": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=300&fit=crop",
+        "alt_text": "Spacious yoga hall",
         "position": 1
       }
     ],
@@ -40,52 +40,56 @@
         "id": "amenity1",
         "name": "Wi-Fi",
         "group": "core",
-        "icon_url": "",
         "description": "High-speed internet access"
       },
       {
         "id": "amenity2",
         "name": "Yoga Hall",
-        "group": "core",
-        "icon_url": "",
+        "group": "wellness",
         "description": "Spacious yoga hall with equipment"
+      },
+      {
+        "id": "amenity3",
+        "name": "Meditation Garden",
+        "group": "wellness",
+        "description": "Peaceful outdoor meditation space"
+      },
+      {
+        "id": "amenity4",
+        "name": "Organic Kitchen",
+        "group": "dining",
+        "description": "Fully equipped organic kitchen"
       }
     ]
   },
   {
-    "id": "6e7f8a9b-0c1d-2e3f-4567-890abcdef123",
-    "owner_id": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
-    "title": "Urban Oasis Hotel",
-    "description": "A modern hotel in the heart of the city, ideal for business and leisure.",
+    "id": "2b3c4d5e-6f7g-8901-2345-678901bcdefg",
+    "owner_id": "b2c3d4e5-f6g7-8901-2345-678901bcdefg",
+    "title": "Urban Business Center",
+    "description": "Modern business center in downtown with state-of-the-art conference facilities, perfect for corporate events and meetings.",
     "status": "published",
     "country": "USA",
     "city": "Denver",
-    "address": "456 City Center Blvd",
+    "address": "456 Business District Ave",
     "latitude": 39.739235,
     "longitude": -104.990251,
-    "capacity_min": 50,
-    "capacity_max": 200,
-    "price_min": 150,
-    "price_max": 400,
-    "price_unit": "per_night",
-    "bedrooms": 100,
-    "bathrooms": 100,
-    "website_url": "https://urbanoasis.com",
-    "instagram_url": "https://instagram.com/urbanoasis",
+    "capacity_min": 20,
+    "capacity_max": 150,
+    "price_min": 200,
+    "price_max": 500,
+    "price_unit": "per_day",
+    "bedrooms": 0,
+    "bathrooms": 8,
+    "website_url": "https://urbanbusinesscenter.com",
+    "instagram_url": "https://instagram.com/urbanbusiness",
     "created_at": "2024-01-15T12:00:00Z",
     "updated_at": "2024-01-15T12:00:00Z",
     "photos": [
       {
         "id": "photo3",
-        "url": "https://via.placeholder.com/400x300/3357FF/FFFFFF?text=Venue+2",
-        "alt_text": "Facade of Urban Oasis Hotel",
+        "url": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=300&fit=crop",
+        "alt_text": "Modern conference room",
         "position": 0
-      },
-      {
-        "id": "photo4",
-        "url": "https://via.placeholder.com/400x300/FF3357/FFFFFF?text=Venue+2",
-        "alt_text": "Hotel lobby",
-        "position": 1
       }
     ],
     "amenities": [
@@ -93,52 +97,56 @@
         "id": "amenity1",
         "name": "Wi-Fi",
         "group": "core",
-        "icon_url": "",
         "description": "High-speed internet access"
       },
       {
-        "id": "amenity3",
-        "name": "Gym",
-        "group": "wellness",
-        "icon_url": "",
-        "description": "Fully equipped fitness center"
+        "id": "amenity5",
+        "name": "Conference Rooms",
+        "group": "business",
+        "description": "Multiple conference rooms with AV equipment"
+      },
+      {
+        "id": "amenity6",
+        "name": "Catering Service",
+        "group": "dining",
+        "description": "Professional catering available"
+      },
+      {
+        "id": "amenity7",
+        "name": "Parking",
+        "group": "transport",
+        "description": "Secure parking facilities"
       }
     ]
   },
   {
-    "id": "c1d2e3f4-5a6b-7c8d-9012-34567890abcd",
-    "owner_id": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
-    "title": "Lakeside Villa",
-    "description": "A luxurious villa by the lake, perfect for family gatherings and events.",
+    "id": "3c4d5e6f-7g8h-9012-3456-789012cdefgh",
+    "owner_id": "c3d4e5f6-g7h8-9012-3456-789012cdefgh",
+    "title": "Lakeside Luxury Villa",
+    "description": "Exclusive lakeside villa with private beach access, perfect for luxury retreats and intimate gatherings.",
     "status": "published",
     "country": "Canada",
     "city": "Vancouver",
     "address": "789 Lakefront Drive",
     "latitude": 49.28273,
     "longitude": -123.120735,
-    "capacity_min": 5,
-    "capacity_max": 15,
-    "price_min": 300,
-    "price_max": 800,
+    "capacity_min": 4,
+    "capacity_max": 12,
+    "price_min": 400,
+    "price_max": 1200,
     "price_unit": "per_night",
-    "bedrooms": 5,
-    "bathrooms": 4,
+    "bedrooms": 6,
+    "bathrooms": 5,
     "website_url": "https://lakesidevilla.com",
     "instagram_url": "https://instagram.com/lakesidevilla",
     "created_at": "2024-02-01T09:00:00Z",
     "updated_at": "2024-02-01T09:00:00Z",
     "photos": [
       {
-        "id": "photo5",
-        "url": "https://via.placeholder.com/400x300/57FF33/FFFFFF?text=Venue+3",
-        "alt_text": "Lakeside view of the villa",
+        "id": "photo4",
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=400&h=300&fit=crop",
+        "alt_text": "Lakeside villa exterior",
         "position": 0
-      },
-      {
-        "id": "photo6",
-        "url": "https://via.placeholder.com/400x300/FF33FF/FFFFFF?text=Venue+3",
-        "alt_text": "Spacious living room",
-        "position": 1
       }
     ],
     "amenities": [
@@ -146,15 +154,424 @@
         "id": "amenity1",
         "name": "Wi-Fi",
         "group": "core",
-        "icon_url": "",
         "description": "High-speed internet access"
       },
       {
-        "id": "amenity4",
+        "id": "amenity8",
         "name": "Private Pool",
         "group": "wellness",
-        "icon_url": "",
-        "description": "Private swimming pool"
+        "description": "Heated private swimming pool"
+      },
+      {
+        "id": "amenity9",
+        "name": "Private Beach",
+        "group": "outdoor",
+        "description": "Exclusive beach access"
+      },
+      {
+        "id": "amenity10",
+        "name": "Chef Kitchen",
+        "group": "dining",
+        "description": "Professional chef's kitchen"
+      }
+    ]
+  },
+  {
+    "id": "4d5e6f7g-8h9i-0123-4567-890123defghi",
+    "owner_id": "d4e5f6g7-h8i9-0123-4567-890123defghi",
+    "title": "Historic Mansion Events",
+    "description": "Beautifully restored historic mansion with elegant ballrooms, perfect for weddings and special events.",
+    "status": "published",
+    "country": "USA",
+    "city": "Charleston",
+    "address": "321 Historic District St",
+    "latitude": 32.776475,
+    "longitude": -79.931051,
+    "capacity_min": 50,
+    "capacity_max": 200,
+    "price_min": 3000,
+    "price_max": 8000,
+    "price_unit": "per_event",
+    "bedrooms": 0,
+    "bathrooms": 12,
+    "website_url": "https://historicmansion.com",
+    "instagram_url": "https://instagram.com/historicmansion",
+    "created_at": "2024-02-15T14:00:00Z",
+    "updated_at": "2024-02-15T14:00:00Z",
+    "photos": [
+      {
+        "id": "photo5",
+        "url": "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=400&h=300&fit=crop",
+        "alt_text": "Elegant ballroom",
+        "position": 0
+      }
+    ],
+    "amenities": [
+      {
+        "id": "amenity1",
+        "name": "Wi-Fi",
+        "group": "core",
+        "description": "High-speed internet access"
+      },
+      {
+        "id": "amenity11",
+        "name": "Ballroom",
+        "group": "events",
+        "description": "Grand ballroom for large events"
+      },
+      {
+        "id": "amenity12",
+        "name": "Wedding Coordinator",
+        "group": "services",
+        "description": "Professional wedding coordination"
+      },
+      {
+        "id": "amenity13",
+        "name": "Garden",
+        "group": "outdoor",
+        "description": "Beautiful landscaped gardens"
+      }
+    ]
+  },
+  {
+    "id": "5e6f7g8h-9i0j-1234-5678-901234efghij",
+    "owner_id": "e5f6g7h8-i9j0-1234-5678-901234efghij",
+    "title": "Tech Startup Hub",
+    "description": "Modern coworking space designed for tech startups with meeting rooms, event spaces, and networking areas.",
+    "status": "published",
+    "country": "USA",
+    "city": "San Francisco",
+    "address": "555 Innovation Way",
+    "latitude": 37.774929,
+    "longitude": -122.419416,
+    "capacity_min": 10,
+    "capacity_max": 100,
+    "price_min": 150,
+    "price_max": 400,
+    "price_unit": "per_day",
+    "bedrooms": 0,
+    "bathrooms": 6,
+    "website_url": "https://techhub.com",
+    "instagram_url": "https://instagram.com/techhub",
+    "created_at": "2024-03-01T11:00:00Z",
+    "updated_at": "2024-03-01T11:00:00Z",
+    "photos": [
+      {
+        "id": "photo6",
+        "url": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=400&h=300&fit=crop",
+        "alt_text": "Modern coworking space",
+        "position": 0
+      }
+    ],
+    "amenities": [
+      {
+        "id": "amenity1",
+        "name": "Wi-Fi",
+        "group": "core",
+        "description": "High-speed internet access"
+      },
+      {
+        "id": "amenity14",
+        "name": "Meeting Rooms",
+        "group": "business",
+        "description": "Flexible meeting spaces"
+      },
+      {
+        "id": "amenity15",
+        "name": "Coffee Bar",
+        "group": "dining",
+        "description": "Complimentary coffee and snacks"
+      },
+      {
+        "id": "amenity16",
+        "name": "Event Space",
+        "group": "events",
+        "description": "Large event space for presentations"
+      }
+    ]
+  },
+  {
+    "id": "6f7g8h9i-0j1k-2345-6789-012345fghijk",
+    "owner_id": "f6g7h8i9-j0k1-2345-6789-012345fghijk",
+    "title": "Desert Wellness Resort",
+    "description": "Luxury wellness resort in the desert offering spa treatments, yoga classes, and meditation retreats.",
+    "status": "published",
+    "country": "USA",
+    "city": "Phoenix",
+    "address": "888 Desert Oasis Rd",
+    "latitude": 33.448376,
+    "longitude": -112.074037,
+    "capacity_min": 20,
+    "capacity_max": 80,
+    "price_min": 250,
+    "price_max": 600,
+    "price_unit": "per_night",
+    "bedrooms": 40,
+    "bathrooms": 40,
+    "website_url": "https://desertwellness.com",
+    "instagram_url": "https://instagram.com/desertwellness",
+    "created_at": "2024-03-15T16:00:00Z",
+    "updated_at": "2024-03-15T16:00:00Z",
+    "photos": [
+      {
+        "id": "photo7",
+        "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400&h=300&fit=crop",
+        "alt_text": "Desert resort pool",
+        "position": 0
+      }
+    ],
+    "amenities": [
+      {
+        "id": "amenity1",
+        "name": "Wi-Fi",
+        "group": "core",
+        "description": "High-speed internet access"
+      },
+      {
+        "id": "amenity17",
+        "name": "Spa",
+        "group": "wellness",
+        "description": "Full-service spa with treatments"
+      },
+      {
+        "id": "amenity18",
+        "name": "Yoga Studio",
+        "group": "wellness",
+        "description": "Multiple yoga studios"
+      },
+      {
+        "id": "amenity19",
+        "name": "Outdoor Pool",
+        "group": "wellness",
+        "description": "Heated outdoor pool"
+      }
+    ]
+  },
+  {
+    "id": "7g8h9i0j-1k2l-3456-7890-123456ghijkl",
+    "owner_id": "g7h8i9j0-k1l2-3456-7890-123456ghijkl",
+    "title": "Rustic Farm Barn",
+    "description": "Charming rustic barn converted into an event space, perfect for country weddings and family gatherings.",
+    "status": "published",
+    "country": "USA",
+    "city": "Nashville",
+    "address": "444 Country Lane",
+    "latitude": 36.162664,
+    "longitude": -86.781602,
+    "capacity_min": 30,
+    "capacity_max": 120,
+    "price_min": 800,
+    "price_max": 2500,
+    "price_unit": "per_event",
+    "bedrooms": 0,
+    "bathrooms": 4,
+    "website_url": "https://rusticfarmbarn.com",
+    "instagram_url": "https://instagram.com/rusticfarmbarn",
+    "created_at": "2024-04-01T13:00:00Z",
+    "updated_at": "2024-04-01T13:00:00Z",
+    "photos": [
+      {
+        "id": "photo8",
+        "url": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=400&h=300&fit=crop",
+        "alt_text": "Rustic barn interior",
+        "position": 0
+      }
+    ],
+    "amenities": [
+      {
+        "id": "amenity1",
+        "name": "Wi-Fi",
+        "group": "core",
+        "description": "High-speed internet access"
+      },
+      {
+        "id": "amenity20",
+        "name": "Outdoor Space",
+        "group": "outdoor",
+        "description": "Large outdoor event area"
+      },
+      {
+        "id": "amenity21",
+        "name": "Catering Kitchen",
+        "group": "dining",
+        "description": "Commercial kitchen for catering"
+      },
+      {
+        "id": "amenity22",
+        "name": "Parking",
+        "group": "transport",
+        "description": "Ample parking space"
+      }
+    ]
+  },
+  {
+    "id": "8h9i0j1k-2l3m-4567-8901-234567hijklm",
+    "owner_id": "h8i9j0k1-l2m3-4567-8901-234567hijklm",
+    "title": "Modern Art Gallery",
+    "description": "Contemporary art gallery with flexible event spaces, perfect for art exhibitions, corporate events, and cultural gatherings.",
+    "status": "published",
+    "country": "USA",
+    "city": "Los Angeles",
+    "address": "777 Art District Blvd",
+    "latitude": 34.052235,
+    "longitude": -118.243683,
+    "capacity_min": 25,
+    "capacity_max": 150,
+    "price_min": 500,
+    "price_max": 1500,
+    "price_unit": "per_event",
+    "bedrooms": 0,
+    "bathrooms": 6,
+    "website_url": "https://modernartgallery.com",
+    "instagram_url": "https://instagram.com/modernartgallery",
+    "created_at": "2024-04-15T15:00:00Z",
+    "updated_at": "2024-04-15T15:00:00Z",
+    "photos": [
+      {
+        "id": "photo9",
+        "url": "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=400&h=300&fit=crop",
+        "alt_text": "Modern gallery space",
+        "position": 0
+      }
+    ],
+    "amenities": [
+      {
+        "id": "amenity1",
+        "name": "Wi-Fi",
+        "group": "core",
+        "description": "High-speed internet access"
+      },
+      {
+        "id": "amenity23",
+        "name": "Exhibition Space",
+        "group": "events",
+        "description": "Large exhibition areas"
+      },
+      {
+        "id": "amenity24",
+        "name": "AV Equipment",
+        "group": "business",
+        "description": "Professional audio-visual equipment"
+      },
+      {
+        "id": "amenity25",
+        "name": "Bar Service",
+        "group": "dining",
+        "description": "Full bar service available"
+      }
+    ]
+  },
+  {
+    "id": "9i0j1k2l-3m4n-5678-9012-345678ijklmn",
+    "owner_id": "i9j0k1l2-m3n4-5678-9012-345678ijklmn",
+    "title": "Seaside Conference Center",
+    "description": "Professional conference center with ocean views, featuring multiple meeting rooms and state-of-the-art facilities.",
+    "status": "published",
+    "country": "USA",
+    "city": "Miami",
+    "address": "999 Ocean Drive",
+    "latitude": 25.76168,
+    "longitude": -80.19179,
+    "capacity_min": 50,
+    "capacity_max": 300,
+    "price_min": 300,
+    "price_max": 800,
+    "price_unit": "per_day",
+    "bedrooms": 0,
+    "bathrooms": 15,
+    "website_url": "https://seasideconference.com",
+    "instagram_url": "https://instagram.com/seasideconference",
+    "created_at": "2024-05-01T10:00:00Z",
+    "updated_at": "2024-05-01T10:00:00Z",
+    "photos": [
+      {
+        "id": "photo10",
+        "url": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop",
+        "alt_text": "Conference center with ocean view",
+        "position": 0
+      }
+    ],
+    "amenities": [
+      {
+        "id": "amenity1",
+        "name": "Wi-Fi",
+        "group": "core",
+        "description": "High-speed internet access"
+      },
+      {
+        "id": "amenity26",
+        "name": "Conference Rooms",
+        "group": "business",
+        "description": "Multiple conference rooms"
+      },
+      {
+        "id": "amenity27",
+        "name": "Ocean View",
+        "group": "outdoor",
+        "description": "Stunning ocean views"
+      },
+      {
+        "id": "amenity28",
+        "name": "Catering",
+        "group": "dining",
+        "description": "Professional catering services"
+      }
+    ]
+  },
+  {
+    "id": "0j1k2l3m-4n5o-6789-0123-456789jklmno",
+    "owner_id": "j0k1l2m3-n4o5-6789-0123-456789jklmno",
+    "title": "Vineyard Estate",
+    "description": "Elegant vineyard estate with wine tasting rooms, perfect for wine tours, corporate events, and romantic weddings.",
+    "status": "published",
+    "country": "USA",
+    "city": "Napa Valley",
+    "address": "555 Wine Country Rd",
+    "latitude": 38.297538,
+    "longitude": -122.286865,
+    "capacity_min": 20,
+    "capacity_max": 100,
+    "price_min": 2000,
+    "price_max": 6000,
+    "price_unit": "per_event",
+    "bedrooms": 8,
+    "bathrooms": 6,
+    "website_url": "https://vineyardestate.com",
+    "instagram_url": "https://instagram.com/vineyardestate",
+    "created_at": "2024-05-15T12:00:00Z",
+    "updated_at": "2024-05-15T12:00:00Z",
+    "photos": [
+      {
+        "id": "photo11",
+        "url": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=400&h=300&fit=crop",
+        "alt_text": "Vineyard estate exterior",
+        "position": 0
+      }
+    ],
+    "amenities": [
+      {
+        "id": "amenity1",
+        "name": "Wi-Fi",
+        "group": "core",
+        "description": "High-speed internet access"
+      },
+      {
+        "id": "amenity29",
+        "name": "Wine Tasting",
+        "group": "dining",
+        "description": "Professional wine tasting experiences"
+      },
+      {
+        "id": "amenity30",
+        "name": "Vineyard Tours",
+        "group": "outdoor",
+        "description": "Guided vineyard tours"
+      },
+      {
+        "id": "amenity31",
+        "name": "Event Lawn",
+        "group": "outdoor",
+        "description": "Beautiful outdoor event space"
       }
     ]
   }

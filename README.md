@@ -21,7 +21,7 @@ A Next.js application for browsing and filtering venues (hotels, villas, event s
 
 - **Frontend**: Next.js 15 (App Router), TypeScript, TailwindCSS
 - **Data**: Mock JSON data (no database required for test)
-- **Images**: Placeholder images from via.placeholder.com
+- **Images**: Placeholder images from images.unsplash.com
 
 ## Getting Started
 
