@@ -63,13 +63,41 @@ npm run dev
 venue-catalog-test-task/
 ├── src/
 │   ├── app/
-│   │   ├── api/venues/route.ts    # API endpoint for venue data
-│   │   ├── centers/page.tsx       # Main catalog page
-│   │   ├── page.tsx              # Home page
-│   │   └── layout.tsx            # Root layout
+│   │   ├── api/
+│   │   │   └── venues/
+│   │   │       └── route.ts      # API endpoint for venue data with filtering
+│   │   ├── centers/
+│   │   │   ├── layout.tsx        # Layout for catalog pages
+│   │   │   └── page.tsx          # Main catalog page
+│   │   ├── globals.css           # Global styles
+│   │   ├── layout.tsx            # Root layout
+│   │   └── page.tsx              # Home page
+│   ├── components/
+│   │   ├── catalog/
+│   │   │   ├── SearchFilters.tsx # Filter and search components
+│   │   │   ├── VenueCard.tsx     # Individual venue display
+│   │   │   ├── VenueGrid.tsx     # Venue grid layout
+│   │   │   └── index.ts          # Catalog component exports
+│   │   ├── home/
+│   │   │   ├── FeatureCard.tsx   # Home page feature cards
+│   │   │   ├── FeaturesSection.tsx # Features section
+│   │   │   ├── Hero.tsx          # Hero section
+│   │   │   └── index.ts          # Home component exports
+│   │   ├── layout/
+│   │   │   ├── Container.tsx     # Layout container component
+│   │   │   └── index.ts          # Layout component exports
+│   │   └── ui/
+│   │       ├── Button.tsx        # Reusable button component
+│   │       ├── Card.tsx          # Reusable card component
+│   │       └── index.ts          # UI component exports
+│   └── types/
+│       └── venue.ts              # TypeScript type definitions
 ├── data/
 │   └── venues.json               # Mock venue data
-├── public/                       # Static assets
+├── public/                       # Static assets (SVG icons)
+├── package.json                  # Dependencies and scripts
+├── tsconfig.json                 # TypeScript configuration
+├── tailwind.config.js            # Tailwind CSS configuration
 └── README.md
 ```
 
@@ -152,24 +180,3 @@ The application is ready for deployment on Vercel:
 - Responsive grid layout with Tailwind CSS
 - Image optimization with Next.js Image component
 - TypeScript for type safety
-
-## Time Spent
-
-Approximately 5 hours total:
-
-- 1 hour: Project setup and understanding requirements
-- 2 hours: API implementation and mock data creation
-- 1.5 hours: Frontend component development
-- 0.5 hours: Testing and documentation
-
-## Future Enhancements
-
-For a production version, consider:
-
-- Database integration (Supabase as specified in main project)
-- User authentication and favorites
-- Image uploads and storage
-- Advanced filtering options
-- Pagination for large datasets
-- SEO optimization
-- Performance monitoring
