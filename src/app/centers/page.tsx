@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Venue, VenuesResponse, FilterState } from "@/types/venue";
 import { SearchFilters, VenueGrid } from "@/components/catalog";
 
@@ -17,7 +17,7 @@ export default function CatalogPage() {
     sortBy: "relevance",
   });
 
-  const fetchVenues = async () => {
+  const fetchVenues = useCallback(async () => {
     setLoading(true);
     try {
       const params = new URLSearchParams();
@@ -38,11 +38,11 @@ export default function CatalogPage() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [filters]);
 
   useEffect(() => {
     fetchVenues();
-  }, [filters]);
+  }, [fetchVenues]);
 
   return (
     <div className="min-h-screen bg-gray-50">

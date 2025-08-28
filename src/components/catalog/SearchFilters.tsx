@@ -1,4 +1,4 @@
-import { FilterState } from "@/types/venue";
+import { FilterState, Venue } from "@/types/venue";
 import { useEffect, useState } from "react";
 
 interface SearchFiltersProps {
@@ -20,8 +20,8 @@ export default function SearchFilters({
         const data = await response.json();
 
         // Extract all unique amenity names from venues
-        const allAmenities = data.venues.flatMap((venue: any) =>
-          venue.amenities.map((amenity: any) => amenity.name)
+        const allAmenities = data.venues.flatMap((venue: Venue) =>
+          venue.amenities.map((amenity) => amenity.name)
         );
 
         // Remove duplicates and sort alphabetically

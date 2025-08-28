@@ -3,11 +3,11 @@ import { Venue } from "@/types/venue";
 import {
   MapPinIcon,
   UsersIcon,
-  CurrencyDollarIcon,
   WifiIcon,
   HomeIcon,
   SparklesIcon,
 } from "@heroicons/react/24/outline";
+import { ComponentType } from "react";
 
 interface VenueCardProps {
   venue: Venue;
@@ -15,7 +15,7 @@ interface VenueCardProps {
 
 // Icon mapping for amenities
 const getAmenityIcon = (amenityName: string) => {
-  const iconMap: { [key: string]: any } = {
+  const iconMap: { [key: string]: ComponentType<{ className?: string }> } = {
     "Wi-Fi": WifiIcon,
     "Yoga Hall": SparklesIcon,
     Gym: HomeIcon,
@@ -112,8 +112,8 @@ export default function VenueCard({ venue }: VenueCardProps) {
           })}
           {venue.amenities.length > 3 && (
             <span className="inline-flex items-center px-1.5 sm:px-2 py-0.5 sm:py-1 bg-gray-100 text-gray-700 text-xs sm:text-sm rounded-full">
-              <SparklesIcon className="w-2.5 h-2.5 sm:w-3 sm:h-3 mr-0.5 sm:mr-1" />+
-              {venue.amenities.length - 3} more
+              <SparklesIcon className="w-2.5 h-2.5 sm:w-3 sm:h-3 mr-0.5 sm:mr-1" />
+              +{venue.amenities.length - 3} more
             </span>
           )}
         </div>
